@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FitBuddy</title>
+</head>
+<body>
+
+    <h1>Welcome to FitBuddy</h1>
+    <p>AI Fitness Plan Generator</p>
+
+    <label>Your Name:</label>
+    <input type="text" id="name">
+
+    <br><br>
+
+    <label>Your Goal:</label>
+    <input type="text" id="goal">
+
+    <br><br>
+
+    <button onclick="generatePlan()">Generate Fitness Plan</button>
+
+    <p id="result"></p>
+
+    <script>
+        function generatePlan() {
+            let name = document.getElementById("name").value;
+            let goal = document.getElementById("goal").value;
+
+            document.getElementById("result").innerHTML =
+                "Hello " + name + "! Your fitness goal is " + goal + ".";
+        }
+    </script>
+
+</body>
+</html>
