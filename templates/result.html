@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FitBuddy Result</title>
+</head>
+<body>
+    <h1>Welcome {{ name }}</h1>
+    <p>BMI: {{ bmi }}</p>
+    <p>Calories: {{ calories }}</p>
+    <p>{{ tip }}</p>
+    <h2>Your FitBuddy Plan</h2>
+    <div>{{ plan | safe }}</div>
+    <a href="/">Go Back</a>
+</body>
+</html>
